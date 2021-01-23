@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020C66675915A5F2FE906D1D /* libPods-proxy_conf_helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 168D9B6E0133D852A5F3F791 /* libPods-proxy_conf_helper.a */; };
 		083BF8371D82742200831C68 /* PingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BF8351D82742200831C68 /* PingClient.swift */; };
 		08635C771EF750FA00F1D25E /* SubscribeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08635C761EF750FA00F1D25E /* SubscribeManager.swift */; };
 		086A31451F1AF797004C7285 /* SubscribePreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086A31471F1AF797004C7285 /* SubscribePreferenceWindowController.xib */; };
@@ -21,6 +20,7 @@
 		08F162BE1EBEDF0100C52869 /* chn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BD1EBEDF0100C52869 /* chn.acl */; };
 		08F162C01EBEE6F800C52869 /* backchn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BF1EBEE6F800C52869 /* backchn.acl */; };
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
+		142127E225B969F100832B83 /* libPods-proxy_conf_helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 168D9B6E0133D852A5F3F791 /* libPods-proxy_conf_helper.a */; };
 		98335024242C524800F947A4 /* LaunchAtLoginHelper.app in Copy LaunchAtLoginHelper */ = {isa = PBXBuildFile; fileRef = 98335021242C4E2600F947A4 /* LaunchAtLoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B0BFFE91D0460A70040E62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BFFE81D0460A70040E62B /* AppDelegate.swift */; };
@@ -228,7 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020C66675915A5F2FE906D1D /* libPods-proxy_conf_helper.a in Frameworks */,
+				142127E225B969F100832B83 /* libPods-proxy_conf_helper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,7 +760,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -811,7 +811,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -830,7 +830,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4J772T4V7C;
+				DEVELOPMENT_TEAM = C3X3UCPSUV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libcork/include/",
@@ -847,7 +847,7 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -869,7 +869,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4J772T4V7C;
+				DEVELOPMENT_TEAM = C3X3UCPSUV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libcork/include/",
@@ -886,7 +886,7 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -902,6 +902,7 @@
 			baseConfigurationReference = BD2EDEB581B59F4898133A58 /* Pods-proxy_conf_helper.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -912,6 +913,7 @@
 			baseConfigurationReference = 483228B0E4F999EC8C56A355 /* Pods-proxy_conf_helper.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

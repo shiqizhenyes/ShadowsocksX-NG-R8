@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		003B9FC9E937C82635CF68E9E3576B52 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C109AE9CBF1CEFF363364C3D7A01D /* URLRequest+Alamofire.swift */; };
 		07648642F9E03B9C7EB7EBEF14DA9766 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B99FB38D5D435D1CC5DCDABD5305397 /* GCDWebServerFileResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		07B0D7457A5901E4B66AED130E75A8F1 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA4323439F4ECAA84C6995F9ECBF79A /* Carbon.framework */; };
 		08281777D479CF46F0E0F24753E01A63 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A8F998284F9600A92A8A866FCC820 /* Request.swift */; };
 		0B638CF032414AAE41F0D02253886F10 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2D1331849BCC4CD8A0C1BD3C37AD00AC /* cs.lproj */; };
 		0EEDE530AD4098CC0660A78E2852DA6A /* MASKeyMasks.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F68CCD7B9C53FE8EB923F9371A653B3 /* MASKeyMasks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FF6A3BBA9E9DAAE2E741513546FC4B6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DD24D5413C643D87B2214B2A1A310 /* Validation.swift */; };
 		12DF0C4E73CEC6118673050B236C7799 /* MASKeyCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 06AF91231FCD89704C4918A92917AF6C /* MASKeyCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13283107A9C06569A786304D9A59626D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3841701C55CC26553B2A616B1FFDB2F6 /* SystemConfiguration.framework */; };
 		154E531BCF2C329DF233432BE017B0AF /* MASShortcutMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 920233073E521599D263848339836475 /* MASShortcutMonitor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		165F498AB8762893E957BCE0D70F4439 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC255962209F4206A2774A23517A57 /* AFError.swift */; };
+		17C987E189D816E80ED19A1B697BD474 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59894EE39CF11C03D85FA6F97E18E8FC /* CFNetwork.framework */; };
 		1C11628696BD0C889E0A4FC6CA4B6922 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8555DFB8615048610A189CCFDA839CC /* GCDWebServer-dummy.m */; };
-		1C12C7D2A9A258BDCA5D921F8FB43858 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D507AD88C3F8B9469504BC9AF232FC8 /* Cocoa.framework */; };
 		1CE8BDA6C86345FD31F42F3AECB375EA /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E143C182993D8E3E4366267CBCA4FE8 /* NetworkReachabilityManager.swift */; };
 		1D5606C6BD48C543FA0DB2C82B8791B7 /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA22413CFD28D341DD6E0908568376AA /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E3B59E743EF2036BD074083905A0258 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4B21F9577239FD21887AF01A8ABDA4 /* CFNetwork.framework */; };
 		1EE9BB7F97EE824E665E85B5B25330C9 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9AD1DF5A34CFA26A92D1590A2DBDAC3C /* fr.lproj */; };
 		1FAEB66513E2610FE37D99FDD8F9E46D /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0A2B2E16B553688E0935C359500893 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2269EA3F75A28331C687D531F49265B0 /* Pods-ShadowsocksX-NG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ACF6D80CB496CAFDE3545133AB629D /* Pods-ShadowsocksX-NG-dummy.m */; };
+		262EBFD1844224838811BD9E1726CD73 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ED2C103D2EE19749677CB8DC7533F4 /* AppKit.framework */; };
 		28336BDED52F0BC89C06217636953414 /* MASHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C36F9CC069B75748DE3F3369C5DA481 /* MASHotKey.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		28602861CA120D61580FB573C1026A7F /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B1C4BCA8F2B523ED64A42EEB61C133 /* MASShortcut.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2933B39BFCEF204A508F4FFF3188AD27 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59A8B4773943A735B7A0E391D26384 /* URLSessionConfiguration+Alamofire.swift */; };
@@ -33,8 +31,8 @@
 		2BE0DE689754A1603251EB331450718E /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC1AFD0CB265D209892B26E5EA480DC /* ParameterEncoder.swift */; };
 		2C24BAEC2712B35754B821FC9E65F73F /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B63D073FFED33AE1CEF88BAB4A8B71D1 /* GCDWebServerErrorResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3012CBAEC632466CC3EBA7BFADF1CDB7 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7C44C173660DDC18F4CEACE325DD28FB /* ko.lproj */; };
+		31E3DC5341F323FA923A8A5FB430137C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775A6C13A2C7C50A8FCD730CD47806FA /* Cocoa.framework */; };
 		332D9AE4473773687AA9155EF16A80D8 /* MASHotKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E45394DA16AB896F2EE53B2BB86FB39 /* MASHotKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3430BC6CC5F0328FF3EF36F23B552BDD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D507AD88C3F8B9469504BC9AF232FC8 /* Cocoa.framework */; };
 		36FD54565E083A37C6D41A42FC1A485C /* MASShortcutView+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BAFCEF27A9C5658BE15BB6DC5E2C54 /* MASShortcutView+Bindings.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		37A2FCD24ED22C8D670188930CE4CA5D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E3CCF069BABC9CAB49AA99DE5D54F /* RequestTaskMap.swift */; };
 		38DA73EAE4DFB07358B4338D458019A0 /* BRLOptionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6CC58A5F7C80096DB2DFC52015AC93 /* BRLOptionParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -61,11 +59,9 @@
 		6809229B402FC6C91774DA8664AD4F2F /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A8D722D04C27235002D08CDC7FF104 /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C8EC166C81EB4E72450A002224658DC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55353271687DD44174E2CDB7667926D1 /* HTTPMethod.swift */; };
 		6DF750D66E35A9AE2F0E6514F6223432 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3D6C040163E623936E48492373A5F3 /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6E4A808D930200BACECDFED90CA62A6C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D44A4C94232D90CB2807103A966220 /* AppKit.framework */; };
 		6EF3BA2233F7A61F5F8AE595B9CDDE72 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 041FB7B4820ADE6101FC57ABD3B61DEB /* nl.lproj */; };
 		70998DB74466D6DC223B9CE4A999EDD8 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701E8373A4F01CB54520500E0C971FF4 /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		72E6FED1FBFB7D269B435A3802528AA1 /* MASShortcutValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A591D957863109E0D801A5DCD88B51 /* MASShortcutValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		745313FA49EF4EBDBD66B1A701A9D742 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D507AD88C3F8B9469504BC9AF232FC8 /* Cocoa.framework */; };
 		7D5AE7E56AC7636F1D00076095F57745 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3F17515B9B724C780AD6825B5C38D1 /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80C7348602C99C09226B1241C02D4754 /* MASShortcutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 929D9C967D8361DEF5B5F6B46B2B5982 /* MASShortcutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80DBE8FF4DFE41CB54687CAB6A29F1B3 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55743F5E64126185A47500BD81EDD74 /* StringEncoding+Alamofire.swift */; };
@@ -73,6 +69,7 @@
 		8450D728709DB935952A5A59650DB926 /* MASDictionaryTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9953D3F8F3B875A621BBDC8BAE70361C /* MASDictionaryTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85E10F2E2F0044C1ACE78F76395F9077 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B7ADA4F45CC5C8BF08442D0F33EF /* HTTPHeaders.swift */; };
 		8773532D233229099A2483D910C07E73 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D59CCF3A2AC37C63C78F4DB5534A14D4 /* GCDWebServerStreamedResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		88665F16CDF39BC2A50C6619169E6EDF /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F2579AE72F6DD9B6256C7D49D10422 /* Carbon.framework */; };
 		88F5FF298C4C3D2CDCA5EB7B0BE2B52C /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8B802EAA139E26E21161D334913339 /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BEDC2C0D907FBB47A65EE0E01DE2A59 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BD02FEECF31A07305551C911700FA30E /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		901D8E9CC22C5E7FDB218557EBBB3559 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D30AC2BB8F7C67A20700986F3ED8B5 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,6 +78,7 @@
 		9481CDDE9AA86FC2BC1ED53AE4F80ABB /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1C7B72C1020C46580DD5AB5DD1E71D /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		957351F1EDC7885838F80DBED304DA6A /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A67A48026789264B7884CF8A364E1C9D /* ja.lproj */; };
 		964030107A87D7C1B25628B02C0E563F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47EE8FE901ACFE70DB909FE6750A48 /* SessionDelegate.swift */; };
+		96E6F7A2D012051B29BC9147340E5117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775A6C13A2C7C50A8FCD730CD47806FA /* Cocoa.framework */; };
 		9A36F0B5C9A749C213D50F940DFEC18F /* MASShortcut-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1BC40C204059A257931FCB340C701 /* MASShortcut-dummy.m */; };
 		9AFDF651F90884A488A03328CE8698A4 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7EC2E60C90DEBBF3D0EA02FB76E22F55 /* zh-Hans.lproj */; };
 		9DC4A6FCE96D312A9EE0E5D51B4D4A80 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9EF0ED62F5392D85D42C3E9880CDB4 /* URLEncodedFormEncoder.swift */; };
@@ -91,6 +89,7 @@
 		B2047F988C61D368E76A806D5227329E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328850ECD6447F8EAED39E3F133DFB7E /* ResponseSerialization.swift */; };
 		B47372436C56EE24B909DE97D5005A64 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0CC9EE821AEBD0A5E96F33FE2FCD1F9 /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6E387D42749ECE2EE469B5B2D446D77 /* MASShortcutBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A76E0B9131AF3657D4123F14379AF5B /* MASShortcutBinder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BB50088379264D95BB53D678767B7D2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775A6C13A2C7C50A8FCD730CD47806FA /* Cocoa.framework */; };
 		BD379AB5D6DF4FF97EF15732D9635186 /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 146463DCBE7F9855888519177B85F6C9 /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33311F020C5777D0CB7E0F61E4FED8D /* Shortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = 033ABD34AFA3CABCE4C9AB8FEAEEBA16 /* Shortcut.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C341FC8944C28CCA39FB9AC4B0F23763 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9D8CF9DEB8E01F975343C861015F37 /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,14 +105,15 @@
 		DA07C0CDF1B0FBC959A4406DE142A081 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF90675B718A5254AD712B3632AC53F /* EventMonitor.swift */; };
 		DA6512AAAFD92EFA9860ED84C3A308B9 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9064E93108C3A403CD2F516AE48378 /* Alamofire.swift */; };
 		DDA3EF3B4A1D99E1E4AB016CFC1B544D /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C5A1660BBD100D952D5C17B1A582 /* RequestInterceptor.swift */; };
-		DE4B24CF049CF6370FA12F9E95C76573 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D507AD88C3F8B9469504BC9AF232FC8 /* Cocoa.framework */; };
 		DF3FD63D6A37C12FDB09B8CA5AE80AC3 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E67D2A3FEFC865BA352120710C96CCC6 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E03556E8EC8DA4FF0DE3ED6F86BD7C51 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775A6C13A2C7C50A8FCD730CD47806FA /* Cocoa.framework */; };
 		E28A1407D611DC37AF77ABF24193941E /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4652C7F5831521EA2B07CC64600556B1 /* en.lproj */; };
 		E4E727DD13DA225D574D9880D9CB7348 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9192692B8F340C4ADB6A372E4BAB9D /* CachedResponseHandler.swift */; };
 		E52E9DB2E0EB574ED157EB478E60D13D /* Pods-proxy_conf_helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92621479DF7CF51E2CC67F5EE7CC39BD /* Pods-proxy_conf_helper-dummy.m */; };
 		E5F3CF900C793B92F327E2F4BDF8A8AB /* MASLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E520955576FCA71D8878567ED1F7CE3 /* MASLocalization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E618A89E126F408A59FE3167A6CBB510 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5096DAE03608E4D236112FC80AD0F1A /* OperationQueue+Alamofire.swift */; };
 		E6D1ADE45AA3D5794C9C8E689F2FA09F /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E33F01DAED4FEAD14EF2FCDA5BE3885 /* GCDWebServerFileRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EC388029B45DC677A2412CF1617E4DF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB573A2ED725E33BB5FC290ECA094E39 /* SystemConfiguration.framework */; };
 		EE1635F54EC9D7711A55C915A93FCD2C /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CACEB63F6341E39DB0809AD61D47F97 /* GCDWebServerURLEncodedFormRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EE1F347816E69DB6AB8513488D9D08FF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE29DDE0125218346D6F633C44489C6 /* Session.swift */; };
 		EE5FCC4133C3E712B85676510F2A3D7B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532FA74DC2ADA5D65DC42CE5236B9C9 /* Response.swift */; };
@@ -169,7 +169,6 @@
 		0054ADFD169C3CCC7CDA811B1D8DDC7C /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = Resources/de.lproj; sourceTree = "<group>"; };
 		033ABD34AFA3CABCE4C9AB8FEAEEBA16 /* Shortcut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Shortcut.h; path = Framework/Shortcut.h; sourceTree = "<group>"; };
 		041FB7B4820ADE6101FC57ABD3B61DEB /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = Resources/nl.lproj; sourceTree = "<group>"; };
-		05D44A4C94232D90CB2807103A966220 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		06AF91231FCD89704C4918A92917AF6C /* MASKeyCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASKeyCodes.h; path = Framework/Model/MASKeyCodes.h; sourceTree = "<group>"; };
 		0A24F29E20C39DB7EA5EF0269C08A98E /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		0AE1CF47AB27950073B60DE3FD911924 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
@@ -198,7 +197,7 @@
 		324FD8B47F100E726D539BEEB97804E8 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		328850ECD6447F8EAED39E3F133DFB7E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		338554555CEEB31FD68A7BB1AD29FFB0 /* ResourceBundle-MASShortcut-MASShortcut-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MASShortcut-MASShortcut-Info.plist"; sourceTree = "<group>"; };
-		3841701C55CC26553B2A616B1FFDB2F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		34ED2C103D2EE19749677CB8DC7533F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		3873201CE264BF623651C60429B2333A /* BRLOptionParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BRLOptionParser.h; path = BRLOptionParser/BRLOptionParser.h; sourceTree = "<group>"; };
 		398838846E2BA49BF2467B04513D2689 /* MASShortcut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASShortcut.release.xcconfig; sourceTree = "<group>"; };
 		3ACB0B812ED8D3BD2B084BDFAE86F48E /* Pods-ShadowsocksX-NG-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShadowsocksX-NG-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -216,6 +215,7 @@
 		52ACF6D80CB496CAFDE3545133AB629D /* Pods-ShadowsocksX-NG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShadowsocksX-NG-dummy.m"; sourceTree = "<group>"; };
 		55353271687DD44174E2CDB7667926D1 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		56D30AC2BB8F7C67A20700986F3ED8B5 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		59894EE39CF11C03D85FA6F97E18E8FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		5A76E0B9131AF3657D4123F14379AF5B /* MASShortcutBinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutBinder.m; path = "Framework/User Defaults Storage/MASShortcutBinder.m"; sourceTree = "<group>"; };
 		5CACEB63F6341E39DB0809AD61D47F97 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,14 +233,13 @@
 		6E460D2D75487B647B97EF8C2B7ADE93 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		701E8373A4F01CB54520500E0C971FF4 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
 		76F2915D554C5AD4A2908437960A0D01 /* BRLOptionParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRLOptionParser.debug.xcconfig; sourceTree = "<group>"; };
+		775A6C13A2C7C50A8FCD730CD47806FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		792F8DD571011ACE64F65AD45615FA82 /* MASShortcut-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MASShortcut-Info.plist"; sourceTree = "<group>"; };
 		7A1C7B72C1020C46580DD5AB5DD1E71D /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
 		7A6AFB86ECD9C86C1738245420450999 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = Resources/ru.lproj; sourceTree = "<group>"; };
 		7B59A8B4773943A735B7A0E391D26384 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		7C44C173660DDC18F4CEACE325DD28FB /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = Resources/ko.lproj; sourceTree = "<group>"; };
-		7D507AD88C3F8B9469504BC9AF232FC8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		7E520955576FCA71D8878567ED1F7CE3 /* MASLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLocalization.h; path = Framework/UI/MASLocalization.h; sourceTree = "<group>"; };
-		7EA4323439F4ECAA84C6995F9ECBF79A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
 		7EC2E60C90DEBBF3D0EA02FB76E22F55 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
 		7FAB7F7FA1CBF5570C019B41B504E0F4 /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
 		7FDF8792B607B59BA328C831A08CCA2E /* MASShortcutBinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutBinder.h; path = "Framework/User Defaults Storage/MASShortcutBinder.h"; sourceTree = "<group>"; };
@@ -283,6 +282,7 @@
 		B63D073FFED33AE1CEF88BAB4A8B71D1 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
 		B68C1052A3B51DBCF7D960F898AAFA95 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCDWebServer.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2DD24D5413C643D87B2214B2A1A310 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		BB573A2ED725E33BB5FC290ECA094E39 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		BC949361115354323535AAA0D15F482D /* BRLOptionParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BRLOptionParser-dummy.m"; sourceTree = "<group>"; };
 		BC9E3CCF069BABC9CAB49AA99DE5D54F /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		BD02FEECF31A07305551C911700FA30E /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
@@ -295,7 +295,6 @@
 		C6C04D1A1D5C21AC966A622CEC5F736C /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
 		C8555DFB8615048610A189CCFDA839CC /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
 		CB3D6C040163E623936E48492373A5F3 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
-		CC4B21F9577239FD21887AF01A8ABDA4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		CE519122E7F157613F46C4FAFD0A39B7 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
 		D084BED8231FC8ADD83A9412728A5C33 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
 		D48CAC7EA781BAC0FB07842E2BD3FA50 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
@@ -306,6 +305,7 @@
 		DA8820E26B9A08FCD3912E56FD7B00E2 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		E03EA4EF92E6F102BCBA96E9D8972DE1 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = Resources/es.lproj; sourceTree = "<group>"; };
 		E4B4124397BCD39C9F94994F85B9C80A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		E4F2579AE72F6DD9B6256C7D49D10422 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
 		E55743F5E64126185A47500BD81EDD74 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		E6212111DC9656B693929B975D597D69 /* MASShortcut.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MASShortcut.modulemap; sourceTree = "<group>"; };
 		E67D2A3FEFC865BA352120710C96CCC6 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
@@ -325,8 +325,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E3B59E743EF2036BD074083905A0258 /* CFNetwork.framework in Frameworks */,
-				3430BC6CC5F0328FF3EF36F23B552BDD /* Cocoa.framework in Frameworks */,
+				17C987E189D816E80ED19A1B697BD474 /* CFNetwork.framework in Frameworks */,
+				BB50088379264D95BB53D678767B7D2F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +341,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE4B24CF049CF6370FA12F9E95C76573 /* Cocoa.framework in Frameworks */,
+				31E3DC5341F323FA923A8A5FB430137C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +356,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C12C7D2A9A258BDCA5D921F8FB43858 /* Cocoa.framework in Frameworks */,
-				13283107A9C06569A786304D9A59626D /* SystemConfiguration.framework in Frameworks */,
+				E03556E8EC8DA4FF0DE3ED6F86BD7C51 /* Cocoa.framework in Frameworks */,
+				EC388029B45DC677A2412CF1617E4DF1 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,9 +365,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4A808D930200BACECDFED90CA62A6C /* AppKit.framework in Frameworks */,
-				07B0D7457A5901E4B66AED130E75A8F1 /* Carbon.framework in Frameworks */,
-				745313FA49EF4EBDBD66B1A701A9D742 /* Cocoa.framework in Frameworks */,
+				262EBFD1844224838811BD9E1726CD73 /* AppKit.framework in Frameworks */,
+				88665F16CDF39BC2A50C6619169E6EDF /* Carbon.framework in Frameworks */,
+				96E6F7A2D012051B29BC9147340E5117 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +455,18 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BRLOptionParser";
+			sourceTree = "<group>";
+		};
+		2E828B10E6D73DB9F9FA81390A159AEA /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				34ED2C103D2EE19749677CB8DC7533F4 /* AppKit.framework */,
+				E4F2579AE72F6DD9B6256C7D49D10422 /* Carbon.framework */,
+				59894EE39CF11C03D85FA6F97E18E8FC /* CFNetwork.framework */,
+				775A6C13A2C7C50A8FCD730CD47806FA /* Cocoa.framework */,
+				BB573A2ED725E33BB5FC290ECA094E39 /* SystemConfiguration.framework */,
+			);
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 		4573765EAF35809E6DE9EB5751897E66 /* MASShortcut */ = {
@@ -548,7 +560,7 @@
 		7FBF5E50A8358B3481A13074AA97BE53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				96887F90C497B1C0419010E03964788C /* OS X */,
+				2E828B10E6D73DB9F9FA81390A159AEA /* OS X */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -566,18 +578,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GCDWebServer";
-			sourceTree = "<group>";
-		};
-		96887F90C497B1C0419010E03964788C /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				05D44A4C94232D90CB2807103A966220 /* AppKit.framework */,
-				7EA4323439F4ECAA84C6995F9ECBF79A /* Carbon.framework */,
-				CC4B21F9577239FD21887AF01A8ABDA4 /* CFNetwork.framework */,
-				7D507AD88C3F8B9469504BC9AF232FC8 /* Cocoa.framework */,
-				3841701C55CC26553B2A616B1FFDB2F6 /* SystemConfiguration.framework */,
-			);
-			name = "OS X";
 			sourceTree = "<group>";
 		};
 		A086BD3DB63118F6FEA5DADD93A302BD /* Support Files */ = {
@@ -1128,12 +1128,164 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09BC5A8E9090ED6452CFBC0151D2023F /* Release */ = {
+		0B6E73AB066D164B664599DCC48B1147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324FD8B47F100E726D539BEEB97804E8 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12B0FE32A40DD86F2B679BA026ED60EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC666C3406602A2FA375CFD95035CEF /* Pods-proxy_conf_helper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		16B4AB9991D0E5A197219DC66CD62D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76F2915D554C5AD4A2908437960A0D01 /* BRLOptionParser.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/BRLOptionParser/BRLOptionParser-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BRLOptionParser;
+				PRODUCT_NAME = BRLOptionParser;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1944ADE9B73F077C40F2111E39F71B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97AAEFDD510D4C1A0F89AFCE58F65567 /* MASShortcut.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MASShortcut/MASShortcut-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MASShortcut/MASShortcut-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/MASShortcut/MASShortcut.modulemap";
+				PRODUCT_MODULE_NAME = MASShortcut;
+				PRODUCT_NAME = MASShortcut;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B5B8EC43EF87FAC80A5BDD38306A957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2762CEEA825998C04850846B3DA6D36 /* GCDWebServer.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4819858DE9937D851EAC42A421621D57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA3F93281C1258FAB3C73AF7911ABB7A /* BRLOptionParser.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1153,10 +1305,11 @@
 			};
 			name = Release;
 		};
-		2AE0D8B39827576460938522CAB2F560 /* Release */ = {
+		5E5046922B2BADEB6AE175DCA2A5C450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1179,244 +1332,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		3289D8D0B4D4159BC6BE08ADAA659AED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 687EB8052003499C4ED651B4D9E0A157 /* GCDWebServer.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
-				PRODUCT_MODULE_NAME = GCDWebServer;
-				PRODUCT_NAME = GCDWebServer;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3F8F0CB04216498F4F606B26F44DBCF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5D8BBE885655E445C39C7362C9F97EE /* Pods-ShadowsocksX-NG.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4C447F57A31F46BDA1569EB26C3DD520 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2762CEEA825998C04850846B3DA6D36 /* GCDWebServer.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
-				PRODUCT_MODULE_NAME = GCDWebServer;
-				PRODUCT_NAME = GCDWebServer;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4FC2573C62FF137E2136A72738B1AE0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 398838846E2BA49BF2467B04513D2689 /* MASShortcut.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MASShortcut";
-				IBSC_MODULE = MASShortcut;
-				INFOPLIST_FILE = "Target Support Files/MASShortcut/ResourceBundle-MASShortcut-MASShortcut-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = MASShortcut;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		6B7002B95A80B886115B5E07FD2661DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BC666C3406602A2FA375CFD95035CEF /* Pods-proxy_conf_helper.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		76DFBC388B43ACD119A4D1484F5438D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6ABD0CA62451CB7E0D9598401740502 /* Pods-proxy_conf_helper.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		816C679D58750316935F7386A438309D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1455,38 +1371,13 @@
 			};
 			name = Debug;
 		};
-		A90C6C1280A2A34B97CF10D067BB1911 /* Debug */ = {
+		86C9862FFAFCADD3B10B36AB7D3666AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76F2915D554C5AD4A2908437960A0D01 /* BRLOptionParser.debug.xcconfig */;
+			baseConfigurationReference = D5D8BBE885655E445C39C7362C9F97EE /* Pods-ShadowsocksX-NG.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/BRLOptionParser/BRLOptionParser-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = BRLOptionParser;
-				PRODUCT_NAME = BRLOptionParser;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		C54AAD6AB7056B63698EBFE936D2D552 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 324FD8B47F100E726D539BEEB97804E8 /* Alamofire.debug.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1496,36 +1387,96 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		CD17E9B2EE7B1151980924885BB77807 /* Debug */ = {
+		D256BAA9A69C64A728E66C27D53FDD4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F1A880D25EAD11F1FBCBE0A1DB33A5B /* Pods-ShadowsocksX-NG.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D89B9219513814D8CF6A7628CB01E82D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 398838846E2BA49BF2467B04513D2689 /* MASShortcut.release.xcconfig */;
+			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1535,7 +1486,100 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/MASShortcut/MASShortcut-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MASShortcut/MASShortcut-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/MASShortcut/MASShortcut.modulemap";
+				PRODUCT_MODULE_NAME = MASShortcut;
+				PRODUCT_NAME = MASShortcut;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F55D57D4D086DF1971927A54FA06C42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 687EB8052003499C4ED651B4D9E0A157 /* GCDWebServer.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6B84B253DE1626F094BD37FC42474DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6ABD0CA62451CB7E0D9598401740502 /* Pods-proxy_conf_helper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F6F7A65B8409439ADE7C99476B70A248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1A880D25EAD11F1FBCBE0A1DB33A5B /* Pods-ShadowsocksX-NG.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1558,13 +1602,29 @@
 			};
 			name = Debug;
 		};
-		D5A007ED6F349BF8D51DCCA775E84AC3 /* Release */ = {
+		F83784D8E778328A1D54C1742AE0566E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97AAEFDD510D4C1A0F89AFCE58F65567 /* MASShortcut.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MASShortcut";
+				IBSC_MODULE = MASShortcut;
+				INFOPLIST_FILE = "Target Support Files/MASShortcut/ResourceBundle-MASShortcut-MASShortcut-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = MASShortcut;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FDA89ABC242DEB4FC31ED35610748BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9F9DA28A297AF571AE909DC301EDE1CA /* Alamofire.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1574,7 +1634,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1596,49 +1655,10 @@
 			};
 			name = Release;
 		};
-		E18A8DB7B4AA699B19BB88BAA7715DBD /* Release */ = {
+		FF51510475AD791C382196B90381FF45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 398838846E2BA49BF2467B04513D2689 /* MASShortcut.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/MASShortcut/MASShortcut-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MASShortcut/MASShortcut-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/MASShortcut/MASShortcut.modulemap";
-				PRODUCT_MODULE_NAME = MASShortcut;
-				PRODUCT_NAME = MASShortcut;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F371B451C472304BCD1A920C75CD14BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97AAEFDD510D4C1A0F89AFCE58F65567 /* MASShortcut.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MASShortcut";
 				IBSC_MODULE = MASShortcut;
@@ -1650,45 +1670,7 @@
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
-		};
-		FF531E9FF833294680E19943D32130D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97AAEFDD510D4C1A0F89AFCE58F65567 /* MASShortcut.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/MASShortcut/MASShortcut-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MASShortcut/MASShortcut-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/MASShortcut/MASShortcut.modulemap";
-				PRODUCT_MODULE_NAME = MASShortcut;
-				PRODUCT_NAME = MASShortcut;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1696,8 +1678,8 @@
 		0D501A92E69AF80E7786DD9C0D172BEC /* Build configuration list for PBXNativeTarget "Pods-proxy_conf_helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76DFBC388B43ACD119A4D1484F5438D9 /* Debug */,
-				6B7002B95A80B886115B5E07FD2661DE /* Release */,
+				F6B84B253DE1626F094BD37FC42474DF /* Debug */,
+				12B0FE32A40DD86F2B679BA026ED60EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1705,8 +1687,8 @@
 		15CE3EB57397F47B5253CB51BDAB4750 /* Build configuration list for PBXNativeTarget "MASShortcut-MASShortcut" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F371B451C472304BCD1A920C75CD14BE /* Debug */,
-				4FC2573C62FF137E2136A72738B1AE0C /* Release */,
+				F83784D8E778328A1D54C1742AE0566E /* Debug */,
+				FF51510475AD791C382196B90381FF45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1714,8 +1696,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				816C679D58750316935F7386A438309D /* Debug */,
-				2AE0D8B39827576460938522CAB2F560 /* Release */,
+				5E5046922B2BADEB6AE175DCA2A5C450 /* Debug */,
+				D256BAA9A69C64A728E66C27D53FDD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1723,8 +1705,8 @@
 		4B2E6A7DD9BEFE908126937ABFFCB84F /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C54AAD6AB7056B63698EBFE936D2D552 /* Debug */,
-				D5A007ED6F349BF8D51DCCA775E84AC3 /* Release */,
+				0B6E73AB066D164B664599DCC48B1147 /* Debug */,
+				FDA89ABC242DEB4FC31ED35610748BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1732,8 +1714,8 @@
 		690C9430B03B92419AFA4555712EC873 /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3289D8D0B4D4159BC6BE08ADAA659AED /* Debug */,
-				4C447F57A31F46BDA1569EB26C3DD520 /* Release */,
+				F55D57D4D086DF1971927A54FA06C42A /* Debug */,
+				1B5B8EC43EF87FAC80A5BDD38306A957 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1741,8 +1723,8 @@
 		6D442598AC59E49374231C4242255CA3 /* Build configuration list for PBXNativeTarget "BRLOptionParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A90C6C1280A2A34B97CF10D067BB1911 /* Debug */,
-				09BC5A8E9090ED6452CFBC0151D2023F /* Release */,
+				16B4AB9991D0E5A197219DC66CD62D5A /* Debug */,
+				4819858DE9937D851EAC42A421621D57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1750,8 +1732,8 @@
 		CEDC54DB11E2CC337DCD18F0708D280A /* Build configuration list for PBXNativeTarget "Pods-ShadowsocksX-NG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD17E9B2EE7B1151980924885BB77807 /* Debug */,
-				3F8F0CB04216498F4F606B26F44DBCF4 /* Release */,
+				F6F7A65B8409439ADE7C99476B70A248 /* Debug */,
+				86C9862FFAFCADD3B10B36AB7D3666AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1759,8 +1741,8 @@
 		E888D466E966B416D89BA302F582A3F5 /* Build configuration list for PBXNativeTarget "MASShortcut" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF531E9FF833294680E19943D32130D4 /* Debug */,
-				E18A8DB7B4AA699B19BB88BAA7715DBD /* Release */,
+				1944ADE9B73F077C40F2111E39F71B3F /* Debug */,
+				D89B9219513814D8CF6A7628CB01E82D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
