@@ -10,11 +10,11 @@
 
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
-#import "../ShadowsocksX-NG/proxy_conf_helper_version.h"
+#import "proxy_conf_helper_version.h"
 
 // A library for parsing command line.
 // https://github.com/stephencelis/BRLOptionParser
-#import <BRLOptionParser/BRLOptionParser.h>
+#import "BRLOptionParser.h"
 
 
 int main(int argc, const char * argv[])

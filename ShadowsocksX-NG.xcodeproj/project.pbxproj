@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020C66675915A5F2FE906D1D /* libPods-proxy_conf_helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 168D9B6E0133D852A5F3F791 /* libPods-proxy_conf_helper.a */; };
 		083BF8371D82742200831C68 /* PingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BF8351D82742200831C68 /* PingClient.swift */; };
 		08635C771EF750FA00F1D25E /* SubscribeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08635C761EF750FA00F1D25E /* SubscribeManager.swift */; };
 		086A31451F1AF797004C7285 /* SubscribePreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086A31471F1AF797004C7285 /* SubscribePreferenceWindowController.xib */; };
@@ -21,6 +20,7 @@
 		08F162BE1EBEDF0100C52869 /* chn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BD1EBEDF0100C52869 /* chn.acl */; };
 		08F162C01EBEE6F800C52869 /* backchn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BF1EBEE6F800C52869 /* backchn.acl */; };
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
+		1461F11A26DC058F006F1333 /* BRLOptionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461F11826DC058F006F1333 /* BRLOptionParser.m */; };
 		98335024242C524800F947A4 /* LaunchAtLoginHelper.app in Copy LaunchAtLoginHelper */ = {isa = PBXBuildFile; fileRef = 98335021242C4E2600F947A4 /* LaunchAtLoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B0BFFE91D0460A70040E62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BFFE81D0460A70040E62B /* AppDelegate.swift */; };
@@ -134,8 +134,8 @@
 		08F162BF1EBEE6F800C52869 /* backchn.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = backchn.acl; sourceTree = "<group>"; };
 		08F162C11EBEEC0F00C52869 /* gfwlist.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gfwlist.acl; sourceTree = "<group>"; };
 		0AB75A6D229E9DD0009D0748 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SubscribePreferenceWindowController.strings"; sourceTree = "<group>"; };
-		168D9B6E0133D852A5F3F791 /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proxy_conf_helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		483228B0E4F999EC8C56A355 /* Pods-proxy_conf_helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.release.xcconfig"; path = "Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.release.xcconfig"; sourceTree = "<group>"; };
+		1461F11826DC058F006F1333 /* BRLOptionParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLOptionParser.m; sourceTree = "<group>"; };
+		1461F11926DC058F006F1333 /* BRLOptionParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLOptionParser.h; sourceTree = "<group>"; };
 		6618B10B340A3D7A925E0A9F /* Pods_ShadowsocksX_NGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D181C28E4E8EAEA91CF7854 /* Pods-ShadowsocksX-NGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NGTests.release.xcconfig"; path = "Target Support Files/Pods-ShadowsocksX-NGTests/Pods-ShadowsocksX-NGTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E2417EA26470A73DF17FC78 /* Pods-ShadowsocksX-NG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NG.release.xcconfig"; path = "Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,7 +184,6 @@
 		9BEEF0731D04EF3E00FC52B3 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		9BEEF0771D04FE8A00FC52B3 /* LaunchAgentUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAgentUtils.swift; sourceTree = "<group>"; };
 		B2DEA085109C9B200E36DA0A /* Pods_ShadowsocksX_NG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD2EDEB581B59F4898133A58 /* Pods-proxy_conf_helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.debug.xcconfig"; path = "Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.debug.xcconfig"; sourceTree = "<group>"; };
 		BE492022242F412900A6C78E /* tcping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tcping.swift; sourceTree = "<group>"; };
 		BE492023242F412900A6C78E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		BE492024242F412900A6C78E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
@@ -228,7 +227,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020C66675915A5F2FE906D1D /* libPods-proxy_conf_helper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +240,6 @@
 				7E2417EA26470A73DF17FC78 /* Pods-ShadowsocksX-NG.release.xcconfig */,
 				8428A07C59DC83DCFDB0D9D4 /* Pods-ShadowsocksX-NGTests.debug.xcconfig */,
 				6D181C28E4E8EAEA91CF7854 /* Pods-ShadowsocksX-NGTests.release.xcconfig */,
-				BD2EDEB581B59F4898133A58 /* Pods-proxy_conf_helper.debug.xcconfig */,
-				483228B0E4F999EC8C56A355 /* Pods-proxy_conf_helper.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -375,6 +371,8 @@
 		9B3FFF451D09CD3B0019A709 /* proxy_conf_helper */ = {
 			isa = PBXGroup;
 			children = (
+				1461F11926DC058F006F1333 /* BRLOptionParser.h */,
+				1461F11826DC058F006F1333 /* BRLOptionParser.m */,
 				9B3FFF461D09CD3B0019A709 /* main.m */,
 			);
 			path = proxy_conf_helper;
@@ -397,7 +395,6 @@
 				9B3FFF3B1D08D93B0019A709 /* WebKit.framework */,
 				B2DEA085109C9B200E36DA0A /* Pods_ShadowsocksX_NG.framework */,
 				6618B10B340A3D7A925E0A9F /* Pods_ShadowsocksX_NGTests.framework */,
-				168D9B6E0133D852A5F3F791 /* libPods-proxy_conf_helper.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -430,7 +427,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B3FFF481D09CD3B0019A709 /* Build configuration list for PBXNativeTarget "proxy_conf_helper" */;
 			buildPhases = (
-				787A182AA1AB7B12163C512E /* [CP] Check Pods Manifest.lock */,
 				9B3FFF401D09CD3B0019A709 /* Sources */,
 				9B3FFF411D09CD3B0019A709 /* Frameworks */,
 				9B3FFF421D09CD3B0019A709 /* CopyFiles */,
@@ -546,28 +542,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		787A182AA1AB7B12163C512E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-proxy_conf_helper-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B47E3106C5B7892E1D278C52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1461F11A26DC058F006F1333 /* BRLOptionParser.m in Sources */,
 				9B3FFF471D09CD3B0019A709 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -830,7 +805,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4J772T4V7C;
+				DEVELOPMENT_TEAM = C3X3UCPSUV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libcork/include/",
@@ -846,6 +821,7 @@
 					"$(SDKROOT)/usr/lib/system",
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/Pods",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.7.2;
@@ -869,7 +845,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4J772T4V7C;
+				DEVELOPMENT_TEAM = C3X3UCPSUV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libcork/include/",
@@ -885,6 +861,7 @@
 					"$(SDKROOT)/usr/lib/system",
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/Pods",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.7.2;
@@ -899,9 +876,9 @@
 		};
 		9B3FFF491D09CD3B0019A709 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD2EDEB581B59F4898133A58 /* Pods-proxy_conf_helper.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = C3X3UCPSUV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -909,9 +886,9 @@
 		};
 		9B3FFF4A1D09CD3B0019A709 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 483228B0E4F999EC8C56A355 /* Pods-proxy_conf_helper.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = C3X3UCPSUV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
