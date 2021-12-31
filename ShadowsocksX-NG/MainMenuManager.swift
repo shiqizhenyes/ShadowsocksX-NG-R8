@@ -193,15 +193,15 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
     }
     
     @objc private func updateSubAndVersion() {
-        DispatchQueue.global().async {
-            // Version Check!
-            if UserDefaults.standard.bool(forKey: USERDEFAULTS_AUTO_CHECK_UPDATE) {
-                self.checkForUpdate(mustShowAlert: false)
-            }
-            if UserDefaults.standard.bool(forKey: USERDEFAULTS_AUTO_UPDATE_SUBSCRIBE) {
-                SubscribeManager.instance.updateAllServerFromSubscribe(auto: true, useProxy: UserDefaults.standard.bool(forKey: USERDEFAULTS_AUTO_UPDATE_SUBSCRIBE_WITH_PROXY))
-            }
-        }
+//        DispatchQueue.global().async {
+//            // Version Check!
+//            if UserDefaults.standard.bool(forKey: USERDEFAULTS_AUTO_CHECK_UPDATE) {
+//                self.checkForUpdate(mustShowAlert: false)
+//            }
+//            if UserDefaults.standard.bool(forKey: USERDEFAULTS_AUTO_UPDATE_SUBSCRIBE) {
+//                SubscribeManager.instance.updateAllServerFromSubscribe(auto: true, useProxy: UserDefaults.standard.bool(forKey: USERDEFAULTS_AUTO_UPDATE_SUBSCRIBE_WITH_PROXY))
+//            }
+//        }
     }
     
     @objc func handleURLEvent(_ event: NSAppleEventDescriptor, withReplyEvent replyEvent: NSAppleEventDescriptor) {
@@ -445,12 +445,12 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
     }
     
     @IBAction func feedback(_ sender: NSMenuItem) {
-        NSWorkspace.shared.open(URL(string: "https://github.com/paradiseduo/ShadowsocksX-NG-R8/issues")!)
+        NSWorkspace.shared.open(URL(string: "https://github.com/shiqizhenyes/ShadowsocksX-NG-R8/issues")!)
     }
     
-    @IBAction func checkForUpdate(_ sender: NSMenuItem) {
-        checkForUpdate(mustShowAlert: true)
-    }
+//    @IBAction func checkForUpdate(_ sender: NSMenuItem) {
+//        checkForUpdate(mustShowAlert: true)
+//    }
     
     @IBAction func showAbout(_ sender: NSMenuItem) {
         NSApp.orderFrontStandardAboutPanel(sender);
@@ -685,20 +685,20 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
         }
     }
     
-    func checkForUpdate(mustShowAlert: Bool) -> Void {
-        let versionChecker = VersionChecker()
-        DispatchQueue.global().async {
-            let newVersion = versionChecker.checkNewVersion()
-            DispatchQueue.main.async {
-                if (mustShowAlert || newVersion["newVersion"] as! Bool){
-                    let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
-                    if (newVersion["newVersion"] as! Bool && alertResult == 1000){
-                        NSWorkspace.shared.open(URL(string: "https://github.com/paradiseduo/ShadowsocksX-NG-R8/releases")!)
-                    }
-                }
-            }
-        }
-    }
+//    func checkForUpdate(mustShowAlert: Bool) -> Void {
+//        let versionChecker = VersionChecker()
+//        DispatchQueue.global().async {
+//            let newVersion = versionChecker.checkNewVersion()
+//            DispatchQueue.main.async {
+//                if (mustShowAlert || newVersion["newVersion"] as! Bool){
+//                    let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
+//                    if (newVersion["newVersion"] as! Bool && alertResult == 1000){
+//                        NSWorkspace.shared.open(URL(string: "https://github.com/paradiseduo/ShadowsocksX-NG-R8/releases")!)
+//                    }
+//                }
+//            }
+//        }
+//    }
     
     private func foundSSRURL(_ note: Notification) {
         func failedNotification() {

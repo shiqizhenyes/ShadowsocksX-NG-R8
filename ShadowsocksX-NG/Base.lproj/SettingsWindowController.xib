@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -47,19 +47,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="778" height="436"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUj-oI-teb">
-                                            <rect key="frame" x="290" y="300" width="180" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Check Updates At Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lJH-Oy-FC3">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                                <connections>
-                                                    <binding destination="WMo-Q4-0Pp" name="value" keyPath="values.AutoCheckUpdate" id="gpe-3l-4dW"/>
-                                                </connections>
-                                            </buttonCell>
-                                        </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyV-kv-ccf">
-                                            <rect key="frame" x="290" y="270" width="196" height="18"/>
+                                            <rect key="frame" x="290" y="271" width="196" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Update Subscribe At Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bH8-Ib-NwG">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -69,19 +58,8 @@
                                                 </connections>
                                             </buttonCell>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kk7-RG-V4Y">
-                                            <rect key="frame" x="290" y="330" width="143" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Connect At Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="d3q-3O-V8q">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                                <connections>
-                                                    <binding destination="WMo-Q4-0Pp" name="value" keyPath="values.ConnectAtLaunch" id="IFe-dt-QZ3"/>
-                                                </connections>
-                                            </buttonCell>
-                                        </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-hW-slK">
-                                            <rect key="frame" x="290" y="360" width="120" height="18"/>
+                                            <rect key="frame" x="290" y="359" width="120" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Launch At Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vXz-hQ-FUf">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -230,6 +208,17 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kk7-RG-V4Y">
+                                            <rect key="frame" x="290" y="316" width="143" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Connect At Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="d3q-3O-V8q">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <connections>
+                                                    <binding destination="WMo-Q4-0Pp" name="value" keyPath="values.ConnectAtLaunch" id="IFe-dt-QZ3"/>
+                                                </connections>
+                                            </buttonCell>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
