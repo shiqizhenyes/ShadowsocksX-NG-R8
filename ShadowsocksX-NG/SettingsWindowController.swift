@@ -40,15 +40,15 @@ class SettingsWindowController: NSWindowController, NSWindowDelegate, NSTableVie
     
     var networkServices: NSArray!
     var selectedNetworkServices: NSMutableSet!
+    var defaults: UserDefaults!
     
     override func windowDidLoad() {
         super.windowDidLoad()
 
         window?.delegate = self
         launchAtLoginButton.state = AppDelegate.getLauncherStatus() ? .on:.off
-        
-        let d = UserDefaults.standard
-        delayTestMethod.stringValue = d.bool(forKey: USERDEFAULTS_TCP) ? "TCP":"ICMP"
+        defaults = UserDefaults.standard
+        delayTestMethod.stringValue = defaults.bool(forKey: USERDEFAULTS_TCP) ? "TCP":"ICMP"
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -65,7 +65,7 @@ class SettingsWindowController: NSWindowController, NSWindowDelegate, NSTableVie
         httpAddress.delegate = self
         httpPort.delegate = self
         
-        if let services = d.array(forKey: USERDEFAULTS_PROXY4_NETWORK_SERVICES) {
+        if let services = defaults.array(forKey: USERDEFAULTS_PROXY4_NETWORK_SERVICES) {
             selectedNetworkServices = NSMutableSet(array: services)
         } else {
             selectedNetworkServices = NSMutableSet()
@@ -182,11 +182,12 @@ class SettingsWindowController: NSWindowController, NSWindowDelegate, NSTableVie
         if hardwareChanged {
             ProxyConfHelper.disableProxy("hi")
             
-            let defaults = UserDefaults.standard
             defaults.setValue(selectedNetworkServices.allObjects, forKeyPath: USERDEFAULTS_PROXY4_NETWORK_SERVICES)
             defaults.synchronize()
             
-            NotificationCenter.default.post(name: NOTIFY_ADV_CONF_CHANGED, object: nil)
+            let runningMode = defaults.string(forKey: USERDEFAULTS_SHADOWSOCKS_RUNNING_MODE)
+            
+            NotificationCenter.default.post(name: NOTIFY_ADV_CONF_CHANGED, object: nil, userInfo: [runningMode: runningMode ?? "auto"])
             hardwareChanged = false
         }
     }
@@ -196,7 +197,10 @@ class SettingsWindowController: NSWindowController, NSWindowDelegate, NSTableVie
     @IBAction func advancedSaveTap(_ sender: NSButton) {
         if advancedChanged {
             ProxyConfHelper.disableProxy("hi")
-            NotificationCenter.default.post(name: NOTIFY_ADV_CONF_CHANGED, object: nil)
+            
+            let runningMode = defaults.string(forKey: USERDEFAULTS_SHADOWSOCKS_RUNNING_MODE)
+            
+            NotificationCenter.default.post(name: NOTIFY_ADV_CONF_CHANGED, object: nil, userInfo: [runningMode: runningMode ?? "auto"])
             advancedChanged = false
         }
     }
@@ -233,13 +237,15 @@ class SettingsWindowController: NSWindowController, NSWindowDelegate, NSTableVie
                 do {
                     try str.data(using: String.Encoding.utf8)?.write(to: URL(fileURLWithPath: PACUserRuleFilePath), options: .atomic)
 
-                    if GeneratePACFile() {
+                    let runningMode = defaults.string(forKey: USERDEFAULTS_SHADOWSOCKS_RUNNING_MODE)
+                    
+                    if GeneratePACFile(runningModel: runningMode ?? "auto") {
                         // Popup a user notification
                         let notification = NSUserNotification()
                         notification.title = "PAC has been updated by User Rules.".localized
                         DispatchQueue.main.async {
                             NSUserNotificationCenter.default.deliver(notification)
-                            NotificationCenter.default.post(name: NOTIFY_ADV_CONF_CHANGED, object: nil)
+                            NotificationCenter.default.post(name: NOTIFY_ADV_CONF_CHANGED, object: nil, userInfo: [runningMode: runningMode ?? "auto"])
                         }
                     } else {
                         let notification = NSUserNotification()

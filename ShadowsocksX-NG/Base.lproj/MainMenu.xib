@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -19,6 +19,7 @@
                 <outlet property="ACLModeMenuItem" destination="Yub-b0-bni" id="e0w-Td-aE9"/>
                 <outlet property="RunningStatusMenuItem" destination="fzk-mE-CEV" id="R4x-gK-Qcw"/>
                 <outlet property="autoModeMenuItem" destination="r07-Gu-aEz" id="9aH-pQ-Rgi"/>
+                <outlet property="autoModeWithNeteaseMenuItem" destination="hVd-Az-HDW" id="8QZ-sM-fKy"/>
                 <outlet property="connectionDelayTestMenuItem" destination="q2r-Fr-g0n" id="gOE-gQ-cYS"/>
                 <outlet property="copyHttpProxyExportCmdLineMenuItem" destination="Lod-lA-Gfa" id="R2y-sp-Mej"/>
                 <outlet property="fixedWidth" destination="hcf-sD-udd" id="SoW-fQ-fYj"/>
@@ -46,7 +47,13 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="LXP-yK-yQu"/>
-                <menuItem title="Auto Mode By PAC" id="r07-Gu-aEz">
+                <menuItem title="Pac With Netease" id="hVd-Az-HDW" userLabel="Pac With Netease">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="selectPACWithNeteaseMode:" target="Voe-Tx-rLC" id="vPQ-oH-McN"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Pac" id="r07-Gu-aEz" userLabel="Pac">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="selectPACMode:" target="Voe-Tx-rLC" id="l36-cd-xl7"/>

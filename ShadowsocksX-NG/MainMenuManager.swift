@@ -22,6 +22,7 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
     
     @IBOutlet weak var runningStatusMenuItem: NSMenuItem!
     @IBOutlet weak var toggleRunningMenuItem: NSMenuItem!
+    @IBOutlet weak var autoModeWithNeteaseMenuItem: NSMenuItem!
     @IBOutlet weak var autoModeMenuItem: NSMenuItem!
     @IBOutlet weak var globalModeMenuItem: NSMenuItem!
     @IBOutlet weak var manualModeMenuItem: NSMenuItem!
@@ -90,7 +91,7 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
         ])
         
         let notifyCenter = NotificationCenter.default
-        notifyCenter.addObserver(forName: NOTIFY_SERVER_PROFILES_CHANGED, object: nil, queue: nil) { (noti) in
+        notifyCenter.addObserver(forName: NOTIFY_SERVER_PROFILES_CHANGED, object: nil,  queue: nil) { (noti) in
             let profileMgr = ServerProfileManager.instance
             if profileMgr.getActiveProfileId() == "" && profileMgr.profiles.count > 0 {
                 if profileMgr.profiles[0].isValid(){
@@ -105,18 +106,18 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
                     self.refresh()
                 }
             } else {
-                SyncSSLocal { (suce) in
+                SyncSSLocal (finish: { (suce) in
                     self.refresh()
-                }
+                }, runningModel: noti.userInfo?["runningMode"] as! String)
             }
         }
         notifyCenter.addObserver(forName: NOTIFY_ADV_CONF_CHANGED, object: nil, queue: nil) { (noti) in
             Network.refreshProxySession()
-            SyncSSLocal { (suce) in
+            SyncSSLocal (finish: { (suce) in
                 MainMenuManager.applyConfig { (s) in
                     self.refresh()
                 }
-            }
+            }, runningModel: noti.userInfo?["runningMode"] as! String)
         }
         notifyCenter.addObserver(forName: NOTIFY_HTTP_CONF_CHANGED, object: nil, queue: nil) { (noti) in
             SyncPrivoxy {
@@ -233,12 +234,14 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
         let defaults = UserDefaults.standard
         defaults.set(!defaults.bool(forKey: USERDEFAULTS_SHADOWSOCKS_ON), forKey: USERDEFAULTS_SHADOWSOCKS_ON)
         defaults.synchronize()
+        let runningMode = defaults.string(forKey: USERDEFAULTS_SHADOWSOCKS_RUNNING_MODE)
+        
         MainMenuManager.applyConfig { (suc) in
-            SyncSSLocal { (s) in
+            SyncSSLocal (finish: { (s) in
                 DispatchQueue.main.async {
                     finish(true)
                 }
-            }
+            }, runningModel: runningMode ?? "auto")
         }
     }
     
@@ -367,6 +370,10 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
     }
     
     // MARK: Proxy submenu function
+    
+    @IBAction func selectPACWithNeteaseMode(_ sender: NSMenuItem) {
+        Mode.switchTo(.PACNETEASE)
+    }
 
     @IBAction func selectPACMode(_ sender: NSMenuItem) {
         Mode.switchTo(.PAC)
@@ -408,12 +415,14 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
         let index = sender.tag
         let spMgr = ServerProfileManager.instance
         let newProfile = spMgr.profiles[index]
+        let defaults = UserDefaults.standard
+        let runningMode = defaults.string(forKey: USERDEFAULTS_SHADOWSOCKS_RUNNING_MODE)
         if newProfile.uuid != spMgr.getActiveProfileId() {
             spMgr.setActiveProfiledId(newProfile.uuid)
-            SyncSSLocal { (suce) in
+            SyncSSLocal (finish: { (suce) in
                 self.updateServersMenu()
                 self.updateRunningModeMenu()
-            }
+            }, runningModel: runningMode ?? "auto")
         } else {
             self.updateRunningModeMenu()
         }
@@ -482,6 +491,7 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
         }
 
         serversMenuItem.title = serverMenuText
+        autoModeWithNeteaseMenuItem.state = NSControl.StateValue(rawValue: 0)
         autoModeMenuItem.state = NSControl.StateValue(rawValue: 0)
         globalModeMenuItem.state = NSControl.StateValue(rawValue: 0)
         manualModeMenuItem.state = NSControl.StateValue(rawValue: 0)
@@ -489,7 +499,9 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
         ACLBackChinaMenuItem.state = NSControl.StateValue(rawValue: 0)
         ACLAutoModeMenuItem.state = NSControl.StateValue(rawValue: 0)
         ACLModeMenuItem.state = NSControl.StateValue(rawValue: 0)
-        if mode == "auto" {
+        if mode == "autoWithNetease" {
+            autoModeWithNeteaseMenuItem.state = NSControl.StateValue(rawValue: 1)
+        } else if mode == "auto" {
             autoModeMenuItem.state = NSControl.StateValue(rawValue: 1)
         } else if mode == "global" {
             globalModeMenuItem.state = NSControl.StateValue(rawValue: 1)
@@ -519,7 +531,9 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
         let defaults = UserDefaults.standard
         let mode = defaults.string(forKey: USERDEFAULTS_SHADOWSOCKS_RUNNING_MODE)
         if defaults.bool(forKey: USERDEFAULTS_SHADOWSOCKS_ON) {
-            if mode == "auto" {
+            if mode == "autoWithNetease" {
+                statusItem.image = NSImage(named: "menu_icon_pac")!
+            }else if mode == "auto" {
                 statusItem.image = NSImage(named: "menu_icon_pac")!
             } else if mode == "global" {
                 statusItem.image = NSImage(named: "menu_icon_global")!
@@ -775,10 +789,14 @@ class MainMenuManager: NSObject, NSUserNotificationCenterDelegate {
                 if s {
                     StartPrivoxy { (ss) in
                         if ss {
-                            if mode == "auto" {
+                            if mode == "auto" || mode == "autoWithNetease" {
                                 ProxyConfHelper.disableProxy("hi")
                                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.5) {
-                                    ProxyConfHelper.enablePACProxy("hi")
+                                    if mode == "auto" {
+                                        ProxyConfHelper.enablePACProxy("auto")
+                                    } else {
+                                        ProxyConfHelper.enablePACProxy("netease")
+                                    }
                                 }
                             } else if mode == "global" {
                                 ProxyConfHelper.disableProxy("hi")

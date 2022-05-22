@@ -192,26 +192,24 @@ GCDWebServer *webServer = nil;
     //接受参数为以后使用定制PAC文件
     NSData * originalPACData;
     NSString * routerPath = @"/proxy.pac";
-    if ([PACFilePath isEqual: @"hi"]) {//用默认路径来代替
+    if ([PACFilePath isEqual: @"auto"]) {//用默认路径来代替
         PACFilePath = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @".ShadowsocksX-NG/gfwlist.js"];
         originalPACData = [NSData dataWithContentsOfFile: [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @".ShadowsocksX-NG/gfwlist.js"]];
     }else{//用定制路径来代替
-        originalPACData = [NSData dataWithContentsOfFile: [NSString stringWithFormat:@"%@/%@/%@", NSHomeDirectory(), @".ShadowsocksX-NG", PACFilePath]];
-        routerPath = [NSString stringWithFormat:@"/%@",PACFilePath];
+        PACFilePath = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @".ShadowsocksX-NG/gfwlistWithNetease.js"];
+        originalPACData = [NSData dataWithContentsOfFile: [NSString stringWithFormat:@"%@/%@/%@", NSHomeDirectory(), @".ShadowsocksX-NG", @"gfwlistWithNetease.js"]];
     }
     [self stopPACServer];
     webServer = [[GCDWebServer alloc] init];
     [webServer addHandlerForMethod:@"GET" path: routerPath requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
         return [GCDWebServerDataResponse responseWithData: originalPACData contentType:@"application/x-ns-proxy-autoconfig"];
-    }
-     ];
+        }
+    ];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString * address = [defaults stringForKey:USERDEFAULTS_PAC_SERVER_LISTEN_ADDRESS];
     int port = (short)[defaults integerForKey:USERDEFAULTS_PAC_SERVER_LISTEN_PORT];
-
     [webServer startWithOptions:@{@"BindToLocalhost":@YES, @"Port":@(port)} error:nil];
-
-    return [NSString stringWithFormat:@"%@%@:%d%@",@"http://",address,port,routerPath];
+    return [NSString stringWithFormat:@"%@%@:%d%@", @"http://", address,port,routerPath];
 }
 
 + (void)stopPACServer {

@@ -14,6 +14,7 @@ let OldErrorPACRulesDirPath = NSHomeDirectory() + "/.ShadowsocksX-NE/"
 let PACRulesDirPath = NSHomeDirectory() + "/.ShadowsocksX-NG/"
 let PACUserRuleFilePath = PACRulesDirPath + "user-rule.txt"
 let PACFilePath = PACRulesDirPath + "gfwlist.js"
+let PACWithNeteaseFilePath = PACRulesDirPath + "gfwlistWithNetease.js"
 let GFWListFilePath = PACRulesDirPath + "gfwlist.txt"
 
 let ACLWhiteListFilePath = PACRulesDirPath + "chn.acl"
@@ -21,7 +22,7 @@ let ACLBackCHNFilePath = PACRulesDirPath + "backchn.acl"
 let ACLGFWListFilePath = PACRulesDirPath + "gfwlist.acl"
 
 // Because of LocalSocks5.ListenPort may be changed
-func SyncPac() {
+func SyncPac(runningModel: String) {
     var needGenerate = false
     
     let nowSocks5Port = UserDefaults.standard.integer(forKey: USERDEFAULTS_LOCAL_SOCKS5_LISTEN_PORT)
@@ -33,9 +34,12 @@ func SyncPac() {
     }
     
     let fileMgr = FileManager.default
-    if !fileMgr.fileExists(atPath: PACRulesDirPath) {
-        needGenerate = true
+    if runningModel == "autoWithNetease" {
+        needGenerate = !fileMgr.fileExists(atPath: PACWithNeteaseFilePath)
     } else {
+        needGenerate = !fileMgr.fileExists(atPath: PACFilePath)
+    }
+    if !needGenerate {
         if let oldSha1Sum = UserDefaults.standard.object(forKey: USERDEFAULTS_SERVERS_USER_RULE_FILE_SHA1) as? String {
             let newSha1 = getFileSHA1Sum(PACUserRuleFilePath)
             if newSha1 != oldSha1Sum {
@@ -47,21 +51,21 @@ func SyncPac() {
             UserDefaults.standard.set(getFileSHA1Sum(PACUserRuleFilePath), forKey: USERDEFAULTS_SERVERS_USER_RULE_FILE_SHA1)
             UserDefaults.standard.synchronize()
         }
-    }
-    
-    if !fileMgr.fileExists(atPath: ACLWhiteListFilePath) && !fileMgr.fileExists(atPath: ACLBackCHNFilePath) {
-        needGenerate = true
+        
+        if !fileMgr.fileExists(atPath: ACLWhiteListFilePath) && !fileMgr.fileExists(atPath: ACLBackCHNFilePath) {
+            needGenerate = true
+        }
     }
     
     if needGenerate {
-        if !GeneratePACFile() {
+        if !GeneratePACFile(runningModel: runningModel) {
             NSLog("GeneratePACFile failed!")
         }
     }
 }
 
 
-func GeneratePACFile() -> Bool {
+func GeneratePACFile(runningModel: String) -> Bool {
     let fileMgr = FileManager.default
     // Maker the dir if rulesDirPath is not exesited.
     if !fileMgr.fileExists(atPath: PACRulesDirPath) {
@@ -157,7 +161,10 @@ func GeneratePACFile() -> Bool {
                 let rulesJsonStr = String(data: rulesJsonData, encoding: String.Encoding.utf8)
                 
                 // Get raw pac js
-                let jsPath = Bundle.main.url(forResource: "abp", withExtension: "js")
+                var jsPath = Bundle.main.url(forResource: "abp", withExtension: "js")
+                if runningModel == "autoWithNetease" {
+                    jsPath = Bundle.main.url(forResource: "abpWithNetease", withExtension: "js")
+                }
                 let jsData = try? Data(contentsOf: jsPath!)
                 var jsStr = String(data: jsData!, encoding: String.Encoding.utf8)
                 
@@ -169,8 +176,12 @@ func GeneratePACFile() -> Bool {
                     , with: "\(socks5Port)")
                 
                 // Write the pac js to file.
+                var pacFilePath = PACFilePath
+                if runningModel == "autoWithNetease" {
+                    pacFilePath = PACWithNeteaseFilePath
+                }
                 try result.data(using: String.Encoding.utf8)?
-                    .write(to: URL(fileURLWithPath: PACFilePath), options: .atomic)
+                    .write(to: URL(fileURLWithPath: pacFilePath), options: .atomic)
                 
                 return true
             } catch {
@@ -199,7 +210,7 @@ func UpdatePACFromGFWList(finish:@escaping()->()) {
         do {
             let value = try response.result.get()
             try value.write(toFile: GFWListFilePath, atomically: true, encoding: String.Encoding.utf8)
-            if GeneratePACFile() {
+            if GeneratePACFile(runningModel: "auto") {
                 // Popup a user notification
                 let notification = NSUserNotification()
                 notification.title = "PAC has been updated by latest GFW List.".localized
@@ -274,7 +285,7 @@ func UpdateACL(finish:@escaping()->()) {
                 do {
                     let value = try response.result.get()
                     try value.write(toFile: ACLWhiteListFilePath, atomically: true, encoding: String.Encoding.utf8)
-                    if GeneratePACFile() {
+                    if GeneratePACFile(runningModel: "auto") {
                         // Popup a user notification
                         let notification = NSUserNotification()
                         notification.title = "White List update succeed.".localized
@@ -299,7 +310,7 @@ func UpdateACL(finish:@escaping()->()) {
                 do {
                     let value = try response.result.get()
                     try value.write(toFile: ACLGFWListFilePath, atomically: true, encoding: String.Encoding.utf8)
-                    if GeneratePACFile() {
+                    if GeneratePACFile(runningModel: "auto") {
                         // Popup a user notification
                         let notification = NSUserNotification()
                         notification.title = "Black List update succeed.".localized
@@ -324,7 +335,7 @@ func UpdateACL(finish:@escaping()->()) {
                 do {
                     let value = try response.result.get()
                     try value.write(toFile: ACLBackCHNFilePath, atomically: true, encoding: String.Encoding.utf8)
-                    if GeneratePACFile() {
+                    if GeneratePACFile(runningModel: "auto") {
                         // Popup a user notification
                         let notification = NSUserNotification()
                         notification.title = "BackCHN List update succeed.".localized

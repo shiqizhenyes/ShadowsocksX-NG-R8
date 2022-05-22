@@ -216,10 +216,10 @@ func removeSSLocalConfFile() {
     }
 }
 
-func SyncSSLocal(finish: @escaping(_ success: Bool)->()) {
+func SyncSSLocal(finish: @escaping(_ success: Bool)->(), runningModel: String) {
     func Sync(_ suc: Bool){
         SyncPrivoxy {
-            SyncPac()
+            SyncPac(runningModel: runningModel)
             finish(suc)
         }
     }

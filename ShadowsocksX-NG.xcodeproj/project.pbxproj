@@ -21,6 +21,7 @@
 		08F162C01EBEE6F800C52869 /* backchn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BF1EBEE6F800C52869 /* backchn.acl */; };
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
 		1461F11A26DC058F006F1333 /* BRLOptionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461F11826DC058F006F1333 /* BRLOptionParser.m */; };
+		14D0AFE02830817A0030873E /* abpWithNetease.js in Resources */ = {isa = PBXBuildFile; fileRef = 14D0AFDE2830817A0030873E /* abpWithNetease.js */; };
 		98335024242C524800F947A4 /* LaunchAtLoginHelper.app in Copy LaunchAtLoginHelper */ = {isa = PBXBuildFile; fileRef = 98335021242C4E2600F947A4 /* LaunchAtLoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B0BFFE91D0460A70040E62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BFFE81D0460A70040E62B /* AppDelegate.swift */; };
@@ -136,6 +137,7 @@
 		0AB75A6D229E9DD0009D0748 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SubscribePreferenceWindowController.strings"; sourceTree = "<group>"; };
 		1461F11826DC058F006F1333 /* BRLOptionParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLOptionParser.m; sourceTree = "<group>"; };
 		1461F11926DC058F006F1333 /* BRLOptionParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLOptionParser.h; sourceTree = "<group>"; };
+		14D0AFDE2830817A0030873E /* abpWithNetease.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = abpWithNetease.js; sourceTree = "<group>"; };
 		6618B10B340A3D7A925E0A9F /* Pods_ShadowsocksX_NGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D181C28E4E8EAEA91CF7854 /* Pods-ShadowsocksX-NGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NGTests.release.xcconfig"; path = "Target Support Files/Pods-ShadowsocksX-NGTests/Pods-ShadowsocksX-NGTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E2417EA26470A73DF17FC78 /* Pods-ShadowsocksX-NG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NG.release.xcconfig"; path = "Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG.release.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +257,8 @@
 		9B07EFB01D048E900052D9DF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				14D0AFDE2830817A0030873E /* abpWithNetease.js */,
+				9B3FFF221D088E8D0019A709 /* abp.js */,
 				E8650519243D95E00089706A /* libpcre.1.dylib */,
 				08CF21451E2A730E008F235D /* LICENSE */,
 				C6D4298E1DA75988002A5711 /* install_privoxy.sh */,
@@ -274,7 +278,6 @@
 				088EC3981D5F5BA300E40791 /* whiteiplist.pac */,
 				08F162C11EBEEC0F00C52869 /* gfwlist.acl */,
 				9B3FFF261D0898EB0019A709 /* gfwlist.txt */,
-				9B3FFF221D088E8D0019A709 /* abp.js */,
 				9B07EFA61D048BBB0052D9DF /* ss-local */,
 				9BEEF0651D04CB8500FC52B3 /* install_ss_local.sh */,
 				9BEEF0661D04CE8D00FC52B3 /* start_ss_local.sh */,
@@ -509,6 +512,7 @@
 				E8F9108E2421BC0B005E69E6 /* remove_privoxy.sh in Resources */,
 				9B2491B41D0ACC3A003BBECC /* PreferencesWindowController.xib in Resources */,
 				9B3FFF291D08A1DF0019A709 /* user-rule.txt in Resources */,
+				14D0AFE02830817A0030873E /* abpWithNetease.js in Resources */,
 				C6D429971DA75988002A5711 /* stop_privoxy.sh in Resources */,
 				08CF21461E2A730E008F235D /* LICENSE in Resources */,
 				9BEEF06A1D04D4D500FC52B3 /* start_ss_local.sh in Resources */,
